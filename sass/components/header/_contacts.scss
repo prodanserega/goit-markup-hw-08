@@ -1,0 +1,26 @@
+.contacts {
+    display: flex;
+    margin-left: auto;
+
+.item-contacts:not(:last-child) {
+        margin-right: 50px;
+      }  
+
+.mailto-icon {
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+        fill: currentColor;
+      }
+      
+.icon-tell {
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+        fill: currentColor;
+      }      
+  }
+
+
+
+  

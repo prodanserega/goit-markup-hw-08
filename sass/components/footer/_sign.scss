@@ -1,0 +1,77 @@
+
+  
+  .conteiner-sign {
+    margin-left: auto;
+  }
+  
+  .imput-text {
+    font-family: 400px;
+  
+    width: 358px;
+    height: 50px;
+  
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: $accent-bgc;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: $bgc-accent-text-color;
+    
+    
+    &:focus {
+        outline: none;
+        border-color: $button-bgc;
+      }
+
+  }
+   
+  
+  .button-futter {
+    background: $bgc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 62px;
+    cursor: pointer;
+    border-color: $bgc;
+    outline-color: $bgc;
+  }
+  
+  .imput {
+    margin-right: 12px;
+  }
+  
+  .button-sign {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .icon-fotter {
+    position: absolute;
+    left: 148px;
+    top: 0;
+  
+    transform: translateY(50%);
+    fill: $bgc-accent-text-color;
+  }
+  
+  .sign {
+    padding: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    color: $bgc-accent-text-color;
+  }
+  
+  .form {
+    display: flex;
+    align-items: baseline;
+  }
+  

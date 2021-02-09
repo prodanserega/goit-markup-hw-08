@@ -1,0 +1,65 @@
+body {
+    background-color: $header-bgc;
+    color: $main-text-color;
+    font-family: $main-fond-famele;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    margin: 0;
+  }
+  
+  /*--------------------------------------Скрить заголовки h2 і h1-----------------------------------*/
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  /*--------------------------------------------Общі значення----------------------------------*/
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .conteiner {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .conteiner {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  * {
+    box-sizing: border-box;
+  }

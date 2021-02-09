@@ -1,0 +1,52 @@
+.conteiner-contacts {
+    display: block;
+    width: 231px;
+    margin-right: 70px;
+    padding: 0;
+  }
+  
+  .logo {
+    color: $bgc-accent-text-color;
+  }
+  
+  .logo-footer {
+    font-family: $sec-fond-famele;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+  }
+  
+  .address {
+    color: $bgc-accent-text-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    text-decoration: none;
+
+    &:last-child {
+        margin-bottom: 0;
+      }
+  }
+
+    
+  .link-footer {
+    color: $footer-addressbox-text-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+  
+  .mailto {
+    margin-bottom: 9px;
+  }
+  
+  

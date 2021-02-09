@@ -1,0 +1,42 @@
+.advantage {
+    padding-top: 94px;
+  }
+  
+  .advantage-list {
+    display: flex;
+    padding-left: 0;
+  }
+  
+  .advantage-title {
+    margin-top: 30px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .advantage-item {
+    width: calc((100%-90px) / 4);
+    margin-right: 30px;
+  }
+  
+  .advantage-item:nth-child(4n) {
+    margin-right: 0;
+  }
+  
+  .advantage-essence {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .icon-advantage {
+    width: 65.32px;
+    height: 70px;
+  }
+  
+  .icon-conteiner {
+    background: $secondary-bgc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
