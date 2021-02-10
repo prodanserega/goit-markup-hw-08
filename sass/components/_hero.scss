@@ -1,61 +1,75 @@
-.hero-conteiner {
-    margin: 0 auto;
-    max-width: 1600px;
-  }
-  
 .hero {
-    background: $accent-bgc;
-    padding: 0;
+  background-color: $accent-bgc;
+  text-align: center;
+}
 
-.hero-conteiner {
-        background-image: linear-gradient(
-            to top left,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../img/Герой.jpg);
-        background-position: center;
-        height: 600px;
-        padding-top: 200px;
-        padding-bottom: 200px;
-      }  
-  }
+.hero-title-container {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.hero-title {
+  color: $bgc-accent-text-color;
+  font-weight: 900;
+  font-size:26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 30px;
   
+@media screen and(min-width:480px) {
+  width: 360px;
+}
+
+@media screen and(min-width:1200px) {
+  font-size:44px;
+  line-height: 1.36;
+  width: 695px;
+}
+}
+
+
+.button {
+  color: $bgc-accent-text-color;
+  background-color: $button-bgc;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  display: inline-block;
+  border-style: none;
+  min-width: 200px;
+  outline-color: $main-bgc;
+  cursor: pointer;
+
+}
+
+.overlay-hero {
+  max-width: 1600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/Герой.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 118px 0;
   
-  .heading-conteiner {
-    width: 695px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  .hero-main {
-    color: $bgc-accent-text-color;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-  }
-  
-  .button {
-    background-color: $button-bgc;
-    color: $bgc-accent-text-color;
-    border-color: $button-bgc;
-    font-family: inherit;
-    font-style: normal;
-    font: weight 700;
-    font-size: 16px;
-    line-height: 1.9;
-    align-items: center;
-    letter-spacing: 0.06em;
-    border-style: none;
-  
-    padding-top: 10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    outline-color: $bgc;
-    cursor: pointer;
-  }
+  @media screen and(min-width:1200px) {
+    padding: 200px 0;
+    height: 600px;
+}
+}
+
