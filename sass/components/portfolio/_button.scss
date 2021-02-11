@@ -1,17 +1,15 @@
-.conteiner-button {
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   
   .main-button {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px;
+    flex-wrap: wrap;
+   
+    margin-bottom: 25px;
   }
   
   .button-item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
   
   .button-portfolio {

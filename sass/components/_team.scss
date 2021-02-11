@@ -1,10 +1,15 @@
 .team {
     background: $secondary-bgc;
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and(min-width:1200px) {
+      padding-top: 94px;
     padding-bottom: 94px;
+    }
 
     .team-hero {
-      width: 270px;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
       background-color: $bgc-accent-text-color;
@@ -13,18 +18,35 @@
       border-radius: 0px 0px 4px 4px;
       text-align: center;
   
-     &:not(:last-child) {
-          margin-right: 30px;
-        }
+      &:not(:last-child){
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width:768px) {
+     width: 354px;
+     &:not(:last-child){
+      margin-bottom: unset;
+    }
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width:270px}
   }
   .our-team {
     color: $main-text-color;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    display: block;
+    @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;}
   }
   
   h3 {
@@ -63,27 +85,32 @@
   
   .workers {
     display: block;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+   
   }
   
   .our-team-hidden {
     display: block;
     margin-bottom: 50px;
   }
+
+  
   
   .team-list {
+    text-align: center;
+    // display: flex;
+    @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+     margin-left: -30px;
+    margin-top: -30px;
+  }
   } 
 
   
   
   .foto {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 30px;
   }

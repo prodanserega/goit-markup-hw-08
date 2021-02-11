@@ -453,12 +453,19 @@ ul {
 
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team .team-hero {
-  width: 270px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
@@ -469,17 +476,43 @@ ul {
 }
 
 .team .team-hero:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team .team-hero {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .team .team-hero:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team .team-hero {
+    width: 270px;
+  }
 }
 
 .team .our-team {
   color: #212121;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .team .our-team {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team h3 {
@@ -514,11 +547,6 @@ ul {
 
 .workers {
   display: block;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .our-team-hidden {
@@ -527,14 +555,24 @@ ul {
 }
 
 .team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .foto {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin-bottom: 30px;
 }
@@ -596,8 +634,15 @@ ul {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients .client-link {
@@ -610,7 +655,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 100%;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -628,26 +673,64 @@ ul {
 
 .client-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.16;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .client-title {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
 }
 
 .conteiner-client {
   display: block;
 }
 
-.client-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 50px;
+@media screen and (min-width: 480px) {
+  .client-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+.client-item {
+  width: 100%;
+}
+
+.client-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .client-item {
+    width: 210px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .client-item:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client-item {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-item {
+    width: 170px;
+  }
 }
 
 .footer {
@@ -835,22 +918,18 @@ ul {
   display: block;
 }
 
-.conteiner-button {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .main-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .button-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .button-portfolio {
