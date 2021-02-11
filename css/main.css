@@ -288,6 +288,26 @@ ul {
 
 .advantage {
   padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .advantage-title {
@@ -304,9 +324,14 @@ ul {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .advantage-title {
+    text-align: left;
+  }
+}
+
 .advantage-item {
   width: 100%;
-  margin-right: 30px;
 }
 
 .advantage-item:not(:last-child) {
@@ -315,7 +340,18 @@ ul {
 
 @media screen and (min-width: 768px) {
   .advantage-item {
-    width: 768px;
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .advantage-item:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-item {
+    width: 270px;
   }
 }
 
@@ -350,9 +386,14 @@ ul {
 }
 
 .conteiner-work {
-  padding-top: 94px;
   padding-bottom: 94px;
-  display: block;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner-work {
+    display: block;
+  }
 }
 
 .work {
