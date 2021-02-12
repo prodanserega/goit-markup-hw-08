@@ -1,13 +1,15 @@
 
   
   .conteiner-sign {
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
   }
   
   .imput-text {
     font-family: 400px;
   
-    width: 358px;
+    width: 450px;
     height: 50px;
   
     padding-left: 16px;
@@ -43,9 +45,6 @@
     outline-color: $bgc;
   }
   
-  .imput {
-    margin-right: 12px;
-  }
   
   .button-sign {
     position: relative;
@@ -72,6 +71,12 @@
   
   .form {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+   align-items: center;
+  }
+
+  .imput{
+    width: 100%;
+    margin-bottom: 20px;
   }
   

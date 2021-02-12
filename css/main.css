@@ -745,16 +745,30 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .conteiner-contacts {
   display: block;
   width: 231px;
-  margin-right: 70px;
   padding: 0;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -778,8 +792,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-top: 20px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   text-decoration: none;
 }
 
@@ -801,10 +814,20 @@ ul {
 }
 
 .conteiner-join {
-  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .joim-item {
@@ -829,12 +852,21 @@ ul {
 }
 
 .conteiner-sign {
-  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .imput-text {
   font-family: 400px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -872,10 +904,6 @@ ul {
   outline-color: #2196f3;
 }
 
-.imput {
-  margin-right: 12px;
-}
-
 .button-sign {
   position: relative;
   cursor: pointer;
@@ -903,14 +931,30 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imput {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .portfolio-main {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-main {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-header {
@@ -929,10 +973,17 @@ ul {
 
 @media screen and (min-width: 768px) {
   .main-button {
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-button {
+    margin-bottom: 50px;
   }
 }
 
@@ -992,36 +1043,54 @@ ul {
   color: #212121;
 }
 
-.foto-list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .foto-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .foto-item {
-  -ms-flex-preferred-size: calc(100%-60px)/3;
-      flex-basis: calc(100%-60px)/3;
+  width: 100%;
   border: 1px solid #eeeeee;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: 370px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.foto-item:nth-child(3n) {
-  margin-right: 0;
+.foto-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-.foto-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .foto-item {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .foto-item:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foto-item {
+    width: 370px;
+  }
+}
+
+.img-portfolio {
+  width: 100%;
 }
 
 .link-portfolio {
-  display: block;
+  display: inline-block;
   text-decoration: none;
+  width: 100%;
 }
 
 .link-portfolio:hover, .link-portfolio:focus {

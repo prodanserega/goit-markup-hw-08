@@ -1,8 +1,12 @@
 .conteiner-contacts {
     display: block;
     width: 231px;
-    margin-right: 70px;
+   
     padding: 0;
+    margin-bottom: 60px;
+     display: flex;
+  flex-direction: column;
+    align-items: center;
   }
   
   .logo {
@@ -17,6 +21,7 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
+      
   }
   
   .address {
@@ -26,9 +31,11 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-top: 20px;
-    margin-bottom: 9px;
+   
+    margin-bottom: 8px;
     text-decoration: none;
+
+    
 
     &:last-child {
         margin-bottom: 0;

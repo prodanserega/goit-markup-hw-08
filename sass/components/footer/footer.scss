@@ -8,7 +8,8 @@
 
   .conteiner-footer {
     display: flex;
-    align-items: baseline;
+   flex-direction: column;
+   align-items: center;
   }
   
   
