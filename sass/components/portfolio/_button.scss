@@ -3,13 +3,26 @@
   .main-button {
     display: flex;
     flex-wrap: wrap;
-   
     margin-bottom: 25px;
+
+
+    @media screen and (min-width: 768px) {
+     justify-content: center;
+     margin-bottom: 30px;
+     
+    }
+     @media screen and (min-width: 1200px) {
+     margin-bottom: 50px;
+     }
   }
   
-  .button-item:not(:last-child) {
+  .button-item{
     margin-right: 8px;
     margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: unset;
+    }
   }
   
   .button-portfolio {
