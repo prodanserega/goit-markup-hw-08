@@ -1,6 +1,8 @@
 .nav-conteiner {
     display: flex;
     align-items: center;
+    @media screen and(max-width:480px) {
+  display: none;}
 }
   
 .nav-links {

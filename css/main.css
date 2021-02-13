@@ -113,6 +113,12 @@ ul {
           align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .nav-conteiner {
+    display: none;
+  }
+}
+
 .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,6 +196,12 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts {
+    display: none;
+  }
 }
 
 .contacts .item-contacts:not(:last-child) {
@@ -806,6 +818,7 @@ ul {
         -ms-flex-align: unset;
             align-items: unset;
     margin-bottom: unset;
+    margin-right: 70px;
   }
 }
 
@@ -881,7 +894,6 @@ ul {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-bottom: unset;
-    margin-right: 70px;
   }
 }
 
@@ -938,6 +950,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .label-text {
+    width: 350px;
+  }
+}
+
 .imput-text {
   font-family: 400px;
   width: 100%;
@@ -978,6 +996,12 @@ ul {
   outline-color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .button-futter {
+    margin-left: 12px;
+  }
+}
+
 .button-sign {
   position: relative;
   cursor: pointer;
@@ -985,7 +1009,7 @@ ul {
 
 .icon-fotter {
   position: absolute;
-  left: 148px;
+  left: 150px;
   top: 0;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);

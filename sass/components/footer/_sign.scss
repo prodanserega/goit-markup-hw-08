@@ -6,9 +6,7 @@
    align-items: center;
    width: 100%;
    @media screen and(min-width:1200px) {
-    align-items: flex-start;
-    
-   
+    align-items: flex-start;   
     }
   }
   
@@ -16,6 +14,11 @@
   width: 100%;
   @media screen and(min-width:768px) {
         width: 450px;}
+
+  @media screen and(min-width:1200px) {
+        width: 350px;
+        
+      }
 
 }
 
@@ -40,10 +43,7 @@
     &:focus {
         outline: none;
         border-color: $button-bgc;
-      }
-    
-        
-
+      }     
   }
    
   
@@ -58,7 +58,11 @@
     cursor: pointer;
     border-color: $bgc;
     outline-color: $bgc;
+
+    @media screen and(min-width:1200px) {
+       margin-left: 12px;}
   }
+
   
   
   .button-sign {
@@ -68,7 +72,7 @@
   
   .icon-fotter {
     position: absolute;
-    left: 148px;
+    left: 150px;
     top: 0;
   
     transform: translateY(50%);
@@ -102,6 +106,7 @@
     @media screen and(min-width:1200px) {
       margin-bottom: unset;
       width: 350px;}
+      
     
   }
   
