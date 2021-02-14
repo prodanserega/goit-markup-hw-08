@@ -7,7 +7,10 @@
     letter-spacing: 0.03em;
   
     margin-right: 93px;
-    margin-left: 0px;    
+    margin-left: 0px;
+    
+    @media screen and(max-width:480px) {
+  margin-right: unset;;}
   }
   .logo-web {
     color: $accent-text-color;
