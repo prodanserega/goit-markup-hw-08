@@ -14,9 +14,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 450px;
-    
-    height: 581px;
+    max-width: 450px;
+    width: 100%;
     background-color: $bgc-accent-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -25,7 +24,22 @@
     transition-property: transform, scale;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480) {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 450px;
+    width: 100%;
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    width: 100%;
+  }
+}
+  
   
   .is-hidden {
     opacity: 0;
@@ -43,6 +57,11 @@
     background: $bgc-accent-text-color;
     cursor: pointer;
     outline: none;
+
+    @media screen and (min-width: 480) {
+    top: 8px;
+    right: 8px;
+  }
   }
   
   .close-icon:focus,
