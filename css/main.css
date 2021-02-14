@@ -80,6 +80,7 @@ ul {
 }
 
 .header {
+  width: 100%;
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -119,7 +120,7 @@ ul {
           align-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-conteiner {
     display: none;
   }
@@ -147,7 +148,13 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   position: relative;
-  padding: 33px 0;
+  padding: 38px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .link-header {
+    padding: 33px 0;
+  }
 }
 
 .link-header:hover, .link-header:focus {
@@ -204,9 +211,15 @@ ul {
   margin-left: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .contacts {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: block;
   }
 }
 
@@ -214,14 +227,41 @@ ul {
   margin-right: 50px;
 }
 
-.contacts .mailto-icon {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts .item-contacts:not(:last-child) {
+    margin-right: unset;
+  }
+}
+
+.item-contacts {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 0.8;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .item-contacts {
+    font-size: 14px;
+    line-height: 0.87;
+  }
+}
+
+.item-contacts:last-child {
+  margin-bottom: 0;
+}
+
+.mailto-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contacts .icon-tell {
+.icon-tell {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -240,12 +280,6 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .button-menu {
-    display: none;
-  }
-}
-
 .button-menu:focus,
 .button-menu:hover {
   fill: #2196f3;
@@ -254,7 +288,7 @@ ul {
 .modal-menu {
   position: absolute;
   z-index: 1;
-  top: 50%;
+  top: 36%;
   left: 50%;
   width: 100%;
   max-height: 100%;
@@ -287,9 +321,11 @@ ul {
   display: inline-flex;
   margin: 0;
   padding: 0;
+  cursor: pointer;
+  outline: none;
 }
 
-.nav-links-mobi {
+.nav-conteiner-mobi {
   margin-bottom: 302px;
 }
 

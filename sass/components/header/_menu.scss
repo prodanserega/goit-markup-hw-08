@@ -2,14 +2,11 @@
     margin-left: auto;
     background: $header-bgc;
     border: $header-bgc;
-
-    @media screen and(min-width:768px) {
+    
+    @media screen and(min-width:768px)  {
   display: none;}
 
-  @media screen and(min-width:1200px) {
-  display: none;}
-  
-}
+ }
 
 .button-menu:focus,
 .button-menu:hover{
@@ -20,8 +17,8 @@
 .modal-menu{
     position: absolute;
     z-index: 1;
-    top: 50%;
-    left: 50%;
+    top:36%;
+    left:50%;
     width: 100%;
     max-height:100%;
     background-color: $bgc-accent-text-color;
@@ -46,10 +43,12 @@
     display: inline-flex;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    outline: none;
       
 }
 
-.nav-links-mobi{
+.nav-conteiner-mobi{
     margin-bottom: 302px;
 }
 
