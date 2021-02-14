@@ -13,28 +13,69 @@
 
 <body>
     <!--Шапка сторінки-->
-    <!-- <header class="header portfolio-header">
+    <header class="header portfolio-header">
         <div class="conteiner">
-        <nav class="nav-conteiner"> 
             <a class="logo-header" href="/"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-            <ul class="nav-links site-nav ">
-                <li class="item"><a class="link-header" href="./index.html">Студия</a></li>
-                <li class="item"><a class="link-header current " href="./Portfolio.html">Портфолио</a></li>
-                <li class="item"><a class="link-header" href="">Контакты</a></li>
+            <button class="button-menu" type="button" data-menu-open>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="menu__mob" href="./img/symbol-defs.svg#icon-menu_mob"></use>
+                </svg>
+            </button>
+            <div class="backdrop is-hidden " data-menu>
+                <div class="modal-menu">
+                    <button class="close-menu" data-menu-close>
+                        <svg class="close-icon" height="20" width="20">
+                            <use href="./img/symbol-defs.svg#icon-vector"></use>
+                        </svg>
+                    </button>
+                    <nav class="nav-conteiner-mobi">
+                        <ul class="nav-links-mobi">
+                            <li class="item-mobi"><a class="link-header-mobi current " href="./index.html">Студия</a></li>
+                            <li class="item-mobi"><a class="link-header-mobi" href="./Portfolio.html">Портфолио</a></li>
+                            <li class="item-mobi"><a class="link-header-mobi" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="contacts-mobi">
+                        <li class="item-tel-mobi"><a class="link-contacts-mobi" href="tell:+380961111111">
+                                +38 096 111 11 11</a></li>
+                        <li class="item-mail-mobi"><a class="link-contacts-mobi" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mob-social__list">
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="">Instagram</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="">Twitter</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="">Facebook</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="nav-conteiner">
+                <ul class="nav-links site-nav">
+                    <li class="item"><a class="link-header current " href="./index.html">Студия</a></li>
+                    <li class="item"><a class="link-header" href="./Portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="link-header" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts">
+                <li class="item-contacts"><a class="link-contacts" href="mailto:info@devstudio.com">
+                        <svg class="item-contacts mailto-icon">
+                            <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+                        </svg>info@devstudio.com</a></li>
+                <li class="item-contacts"><a class="link-contacts" href="tell:+380961111111">
+                        <svg class="icon-tell">
+                            <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="contacts">
-            <li class="item-contacts"><a class="link-contacts" href="mailto:info@devstudio.com">
-                    <svg class="item-contacts mailto-icon">
-                        <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
-                    </svg>info@devstudio.com</a></li>
-            <li class="item-contacts"><a class="link-contacts" href="tell:+380961111111">
-                    <svg class="icon-tell">
-                        <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a></li>
-        </ul>
-    </div>
-    </header> -->
+        </div>
+    </header>
     <main class="portfolio-main">
         <div class=" conteiner conteiner-button">
             <h1 class="visually-hidden"></h1>
@@ -51,7 +92,27 @@
                 <li class="foto-item">
                     <a class="link-portfolio" href="">
                         <div class="overlay-conteiner">
-                            <img class="img-portfolio" src="./img/портфолио_1.jpg" width="370" alt="включеный ноутбук" />
+                            <picture>
+                                <source srcset="
+                                                                    
+                                                                    ./img/portfolio/optimisized-jpg/mob/portfolio__1__mob.jpg 1x,
+                                                                    ./img/portfolio/optimisized-jpg/mob/portfolio__1__mob@2x.jpg 2x,
+                                                                    ./img/portfolio/optimisized-jpg/mob/portfolio__1__mob@3x.jpg 3x
+                                                                    " media="(max-width: 767px)" >
+                                <source srcset="
+                                                                    
+                                                                    ./img/portfolio/optimisized-jpg/tab/portfolio__1__tab.jpg 1x,
+                                                                    ./img/portfolio/optimisized-jpg/tab/portfolio__1__tab@2x.jpg 2x,
+                                                                    ./img/portfolio/optimisized-jpg/tab/portfolio__1__tab@3x.jpg 3x
+                                                                    " media="(min-width: 768px) and (max-width: 1199px)" >
+                                <source srcset="
+                                                                    
+                                                                    ./img/portfolio/optimisized-jpg/desk/portfolio__1__desk.jpg 1x,
+                                                                    ./img/portfolio/optimisized-jpg/desk/portfolio__1__desk@2x.jpg 2x,
+                                                                    ./img/portfolio/optimisized-jpg/desk/portfolio__1__desk@3x.jpg 3x
+                                                                    " media="(min-width: 1200px)" >
+                                <img class="img-portfolio" src="./img/portfolio/optimisized-jpg/tab/portfolio__1__tab@2x.jpg" alt="На экране три карточки контакта">
+                            </picture>
                             <div class="overlay">
                                 <p class="ppt">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
                                     цифрового
@@ -66,7 +127,29 @@
                         </li>
                         <li class="foto-item"><a class="link-portfolio" href="">
                                 <div class="overlay-conteiner">
-                                    <img src="./img/портфолио_2.jpg"  alt="баскетбол" />
+                                    <picture>
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__2__mob.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__2__mob@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__2__mob@3x.jpg 3x
+                                                                                                        " media="(max-width: 767px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__2__tab.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__2__tab@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__2__tab@3x.jpg 3x
+                                                                                                        "
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__2__desk.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__2__desk@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__2__desk@3x.jpg 3x
+                                                                                                        " media="(min-width: 1200px)">
+                                        <img class="img-portfolio" src="./img/portfolio/optimisized-jpg/tab/portfolio__2__tab@2x.jpg"
+                                            alt="На экране три карточки контакта">
+                                    </picture>
                                     <div class="overlay">
                                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                             для
@@ -82,7 +165,29 @@
                         </li>
                         <li class="foto-item"><a class="link-portfolio" href="">
                                 <div class="overlay-conteiner">
-                                    <img src="./img/портфолио_3.jpg"  alt="емблема" />
+                                    <picture>
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__3__mob.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__3__mob@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__3__mob@3x.jpg 3x
+                                                                                                        " media="(max-width: 767px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__3__tab.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__3__tab@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__3__tab@3x.jpg 3x
+                                                                                                        "
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__3__desk.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__3__desk@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__3__desk@3x.jpg 3x
+                                                                                                        " media="(min-width: 1200px)">
+                                        <img class="img-portfolio" src="./img/portfolio/optimisized-jpg/tab/portfolio__3__tab@2x.jpg"
+                                            alt="На экране три карточки контакта">
+                                    </picture>
                                     <div class="overlay">
                                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                             для
@@ -98,7 +203,29 @@
                         </li>
                         <li class="foto-item"><a class="link-portfolio" href="">
                                 <div class="overlay-conteiner">
-                                    <img src="./img/портфолио_4.jpg"  alt="наушники" />
+                                <picture>
+                                    <source srcset="
+                                                                                                    
+                                                                                                    ./img/portfolio/optimisized-jpg/mob/portfolio__4__mob.jpg 1x,
+                                                                                                    ./img/portfolio/optimisized-jpg/mob/portfolio__4__mob@2x.jpg 2x,
+                                                                                                    ./img/portfolio/optimisized-jpg/mob/portfolio__4__mob@3x.jpg 3x
+                                                                                                    " media="(max-width: 767px)">
+                                    <source srcset="
+                                                                                                    
+                                                                                                    ./img/portfolio/optimisized-jpg/tab/portfolio__4__tab.jpg 1x,
+                                                                                                    ./img/portfolio/optimisized-jpg/tab/portfolio__4__tab@2x.jpg 2x,
+                                                                                                    ./img/portfolio/optimisized-jpg/tab/portfolio__4__tab@3x.jpg 3x
+                                                                                                    "
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                                    <source srcset="
+                                                                                                    
+                                                                                                    ./img/portfolio/optimisized-jpg/desk/portfolio__4__desk.jpg 1x,
+                                                                                                    ./img/portfolio/optimisized-jpg/desk/portfolio__4__desk@2x.jpg 2x,
+                                                                                                    ./img/portfolio/optimisized-jpg/desk/portfolio__4__desk@3x.jpg 3x
+                                                                                                    " media="(min-width: 1200px)">
+                                    <img class="img-portfolio" src="./img/portfolio/optimisized-jpg/tab/portfolio__4__tab@2x.jpg"
+                                        alt="На экране три карточки контакта">
+                                </picture>
                                     <div class="overlay">
                                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                             для
@@ -114,7 +241,29 @@
                         </li>
                         <li class="foto-item"><a class="link-portfolio" href="">
                                 <div class="overlay-conteiner">
-                                    <img src="./img/портфолио_5.jpg"  alt="дві коробки" />
+                                    <picture>
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__5__mob.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__5__mob@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__5__mob@3x.jpg 3x
+                                                                                                        " media="(max-width: 767px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__5__tab.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__5__tab@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__5__tab@3x.jpg 3x
+                                                                                                        "
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__5__desk.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__5__desk@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__5__desk@3x.jpg 3x
+                                                                                                        " media="(min-width: 1200px)">
+                                        <img class="img-portfolio" src="./img/portfolio/optimisized-jpg/tab/portfolio__5__tab@2x.jpg"
+                                            alt="На экране три карточки контакта">
+                                    </picture>
                                     <div class="overlay">
                                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                             для
@@ -130,7 +279,29 @@
                         </li>
                         <li class="foto-item"><a class="link-portfolio" href="">
                                 <div class="overlay-conteiner">
-                                    <img src="./img/портфолио_6.jpg"  alt="монитор" />
+                                    <picture>
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__6__mob.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__6__mob@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__6__mob@3x.jpg 3x
+                                                                                                        " media="(max-width: 767px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__6__tab.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__6__tab@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__6__tab@3x.jpg 3x
+                                                                                                        "
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__6__desk.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__6__desk@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__6__desk@3x.jpg 3x
+                                                                                                        " media="(min-width: 1200px)">
+                                        <img class="img-portfolio" src="./img/portfolio/optimisized-jpg/tab/portfolio__6__tab@2x.jpg"
+                                            alt="На экране три карточки контакта">
+                                    </picture>
                                     <div class="overlay">
                                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                             для
@@ -146,7 +317,29 @@
                         </li>
                         <li class="foto-item"><a class="link-portfolio" href="">
                                 <div class="overlay-conteiner">
-                                    <img src="./img/портфолио_7.jpg" alt="журнал" />
+                                    <picture>
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__7__mob.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__7__mob@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__7__mob@3x.jpg 3x
+                                                                                                        " media="(max-width: 767px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__7__tab.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__7__tab@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__7__tab@3x.jpg 3x
+                                                                                                        "
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__7__desk.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__7__desk@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__7__desk@3x.jpg 3x
+                                                                                                        " media="(min-width: 1200px)">
+                                        <img class="img-portfolio" src="./img/portfolio/optimisized-jpg/tab/portfolio__7__tab@2x.jpg"
+                                            alt="На экране три карточки контакта">
+                                    </picture>
                                     <div class="overlay">
                                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                             для
@@ -162,7 +355,29 @@
                         </li>
                         <li class="foto-item"><a class="link-portfolio" href="">
                                 <div class="overlay-conteiner">
-                                    <img src="./img/портфолио_8.jpg"  alt="бирка" />
+                                    <picture>
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__8__mob.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__8__mob@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__8__mob@3x.jpg 3x
+                                                                                                        " media="(max-width: 767px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__8__tab.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__8__tab@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__8__tab@3x.jpg 3x
+                                                                                                        "
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__8__desk.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__8__desk@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__8__desk@3x.jpg 3x
+                                                                                                        " media="(min-width: 1200px)">
+                                        <img class="img-portfolio" src="./img/portfolio/optimisized-jpg/tab/portfolio__8__tab@2x.jpg"
+                                            alt="На экране три карточки контакта">
+                                    </picture>
                                     <div class="overlay">
                                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                             для
@@ -178,7 +393,29 @@
                         </li>
                         <li class="foto-item"><a class="link-portfolio" href="">
                                 <div class="overlay-conteiner">
-                                    <img src="./img/портфолио_9.jpg"  alt="печатает на ноутбуки" />
+                                    <picture>
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__9__mob.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__9__mob@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/mob/portfolio__9__mob@3x.jpg 3x
+                                                                                                        " media="(max-width: 767px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__9__tab.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__9__tab@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/tab/portfolio__9__tab@3x.jpg 3x
+                                                                                                        "
+                                            media="(min-width: 768px) and (max-width: 1199px)">
+                                        <source srcset="
+                                                                                                        
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__9__desk.jpg 1x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__9__desk@2x.jpg 2x,
+                                                                                                        ./img/portfolio/optimisized-jpg/desk/portfolio__9__desk@3x.jpg 3x
+                                                                                                        " media="(min-width: 1200px)">
+                                        <img class="img-portfolio" src="./img/portfolio/optimisized-jpg/tab/portfolio__9__tab@2x.jpg"
+                                            alt="На экране три карточки контакта">
+                                    </picture>
                                     <div class="overlay">
                                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                             для
@@ -195,8 +432,8 @@
             </ul>
         </div>
     </main>
-    <!--Футер-->
-    <!-- <footer class="footer">
+    <!-- Футер-->
+    <footer class="footer">
         <div class="conteiner conteiner-footer">
             <div class="conteiner-contacts">
                 <a class="logo-footer" href="/"><span class="logo-web">Web</span><span class="logo">Studio</span></a><br>
@@ -260,7 +497,8 @@
             </div>
         </div>
         
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

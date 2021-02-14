@@ -145,19 +145,35 @@
                 <ul class="conteiner-list">
                     <li class="conteiner-item">
                         <div  class="product-actions">
-                            <img class="img-example" src="./img/Чем ми занимаємось_1.jpg" width="370" alt="печатає" />                        
+                            <img class="img-example" src="./img/Чем ми занимаємось_1.jpg"
+                             srcset="
+                            ./img/activity__1@2x.jpg 2x,
+                            ./imgactivity__1@3x.jpg 3x
+                            " 
+                             width="370" alt="печатає" />                        
                             <h3 class="example">Десктопные приложения</h3>
                         </div>
                     </li>
                     <li class="conteiner-item">
                         <div class="product-actions">
-                            <img class="img-example" src="./img/Чем ми занимаємось_2.jpg" width="370" alt="телефон в руках" />                        
+                            <img class="img-example" src="./img/Чем ми занимаємось_2.jpg"
+                             srcset="
+                            ./img/activity__2@2x.jpg 2x,
+                            ./imgactivity__2@3x.jpg 3x
+                            " 
+                             width="370" alt="телефон в руках" />                        
                             <h3 class="example">Мобильные приложения</h3>
                         </div>
                     </li>
                     <li class="conteiner-item">
                         <div class="product-actions">
-                            <img class="img-example" src="./img/Чем ми занимаємось_3.jpg" width="370" alt="цвітова гама" />                       
+                            <img class="img-example" 
+                            src="./img/Чем ми занимаємось_3.jpg"
+                            srcset="
+                            ./img/activity__3@2x.jpg 2x,
+                            ./imgactivity__3@3x.jpg 3x
+                            " 
+                            width="370" alt="цвітова гама" />                       
                             <h3 class="example">Дизайнерские решения</h3>
                         </div>
                     </li>
@@ -169,7 +185,24 @@
                 <h2 class="our-team-hidden our-team ">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-hero">
-                        <img class="foto" src="./img/наша команда_1.jpg" width="270" alt="Бородатий мужчина" />
+                        <picture>
+                            <source srcset="
+                                                    ./img/team__1__mob.jpg 1x,
+                                                    ./img/team__1__mob@2x.jpg 2x,
+                                                    ./img/team__1__mob@3x.jpg 3x
+                                                    " media="(max-width: 767px)">
+                            <source srcset="
+                                                    ./img/team__1__tab.jpg 1x,
+                                                    ./img/team__1__tab@2x.jpg 2x,
+                                                    ./img/team__1__tab@3x.jpg 3x
+                                                    " media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                                    
+                                                    ./img/team__1__desk.jpg,
+                                                    " media="(min-width: 1200px)">
+                            <img class="foto" src="
+                                                    ./img/team__1__tab.jpg" alt="Фото наша команда 1">
+                        </picture>
                         <h3 class="name">Игорь Демьяненко</h3>
                         <p class="text">Product Designer</p>
                         <div class="network-conteiner">
@@ -202,8 +235,24 @@
                         </div>
                     </li>
                     <li class="team-hero">
-                        <img class="foto" src="./img/наша команда_4.jpg" width="270" alt="Женщина" />
-                        <h3 class="name">Ольга Репина</h3>
+                        <picture>
+                            <source srcset="
+                                                                            ./img/team__2__mob.jpg 1x,
+                                                                            ./img/team__2__mob@2x.jpg 2x,
+                                                                            ./img/team__2__mob@3x.jpg 3x
+                                                                            " media="(max-width: 767px)">
+                            <source srcset="
+                                                                            ./img/team__2__tab.jpg 1x,
+                                                                            ./img/team__2__tab@2x.jpg 2x,
+                                                                            ./img/team__2__tab@3x.jpg 3x
+                                                                            " media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                                                            
+                                                                            ./img/team__2__desk.jpg,
+                                                                            " media="(min-width: 1200px)">
+                            <img class="foto" src="
+                                                                            ./img/team__2__tab.jpg" alt="Фото наша команда 2">
+                        </picture>
                         <p class="text">Frontend Developer</p>
                         <div class="network-conteiner">
                             <ul class="team-icons">
@@ -235,7 +284,24 @@
                         </div>
                     </li>
                     <li class="team-hero">
-                        <img class="foto" src="./img/наша команда_3.jpg" width="270" alt="Маркетолог" />
+                        <picture>
+                            <source srcset="
+                                                                            ./img/team__3__mob.jpg 1x,
+                                                                            ./img/team__3__mob@2x.jpg 2x,
+                                                                            ./img/team__3__mob@3x.jpg 3x
+                                                                            " media="(max-width: 767px)">
+                            <source srcset="
+                                                                            ./img/team__3__tab.jpg 1x,
+                                                                            ./img/team__3__tab@2x.jpg 2x,
+                                                                            ./img/team__3__tab@3x.jpg 3x
+                                                                            " media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                                                            
+                                                                            ./img/team__3__desk.jpg,
+                                                                            " media="(min-width: 1200px)">
+                            <img class="foto" src="
+                                                                            ./img/team__3__tab.jpg" alt="Фото наша команда 3">
+                        </picture>
                         <h3 class="name">Николай Тарасов</h3>
                         <p class="text">Marketing</p>
                         <div class="network-conteiner">
@@ -268,7 +334,24 @@
                         </div>
                     </li>
                     <li class="team-hero">
-                        <img class="foto" src="./img/наша команда_2.jpg" width="270" alt="Інженер" />
+                        <picture>
+                            <source srcset="
+                                                                            ./img/team__4__mob.jpg 1x,
+                                                                            ./img/team__4__mob@2x.jpg 2x,
+                                                                            ./img/team__4__mob@3x.jpg 3x
+                                                                            " media="(max-width: 767px)">
+                            <source srcset="
+                                                                            ./img/team__4__tab.jpg 1x,
+                                                                            ./img/team__4__tab@2x.jpg 2x,
+                                                                            ./img/team__4__tab@3x.jpg 3x
+                                                                            " media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                                                            
+                                                                            ./img/team__4__desk.jpg,
+                                                                            " media="(min-width: 1200px)">
+                            <img class="foto" src="
+                                                                            ./img/team__4__tab.jpg" alt="Фото наша команда 4">
+                        </picture>
                         <h3 class="name">Михаил Ермаков</h3>
                         <p class="text">UI Designer</p>
                         <div class="network-conteiner">
